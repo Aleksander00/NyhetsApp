@@ -28,4 +28,3 @@ class LoginFragment : Fragment() {
 
         }
     }
-
