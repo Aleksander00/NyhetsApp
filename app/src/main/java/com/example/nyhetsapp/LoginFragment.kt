@@ -17,13 +17,16 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-    val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,
-        R.layout.fragment_login, container, false)
+
+        val binding = DataBindingUtil.inflate<FragmentLoginBinding>(
+            inflater,
+            R.layout.fragment_login, container, false
+        )
 
         binding.skipButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
         }
         return binding.root
 
-        }
     }
+}
