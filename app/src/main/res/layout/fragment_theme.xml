@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="316dp"
-        android:minHeight="48dp"
+        android:minHeight="46dp"
         android:text="Darkmode"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
