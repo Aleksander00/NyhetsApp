@@ -1,14 +1,14 @@
 package com.example.nyhetsapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
 import com.example.nyhetsapp.databinding.FragmentMainBinding
+import com.google.android.material.tabs.TabLayout
 
 
 class MainFragment : Fragment() {
@@ -21,6 +21,32 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
+
+        binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            @SuppressLint("SetTextI18n")
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                // Handle tab select
+                when (tab?.position) {
+                    0 -> {
+                        binding.textView2.text = "New"
+                    }
+                    1 -> {
+                        binding.textView2.text = "Comments"
+                    }
+                    2 -> {
+                        binding.textView2.text = "Saved"
+                    }
+
+                }
+            }
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+                // Handle tab reselect
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+                // Handle tab unselect
+            }
+        })
 
         //(activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true) //Removes up button for this fragment
         (activity as AppCompatActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24) //Changes up button icon with drawer icon
@@ -65,6 +91,7 @@ class MainFragment : Fragment() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

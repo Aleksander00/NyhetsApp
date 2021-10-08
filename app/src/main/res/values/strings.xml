@@ -17,7 +17,11 @@
     <string name="search">Search</string>
     <string name="NRK">NRK</string>
     <string name="VG">VG</string>
+    <string name="new_">New</string>
+    <string name="saved">Saved</string>
+    <string name="comments">Comments</string>
+    <!--Settings/theme-->
+    <string name="darkmode">Darkmode</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="darkmode">Darkmode</string>
 </resources>
