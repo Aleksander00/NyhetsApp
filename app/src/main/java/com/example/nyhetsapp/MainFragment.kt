@@ -16,6 +16,7 @@ class MainFragment : Fragment() {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,8 +40,15 @@ class MainFragment : Fragment() {
 
                 }
             }
-            override fun onTabReselected(tab: TabLayout.Tab?) {
+
+            @SuppressLint("SetTextI18n")
+            override fun onTabReselected(tab: TabLayout.Tab?) { //Runs if already selected (When entering fragment)
                 // Handle tab reselect
+                when (tab?.position) {
+                    0 -> {
+                        binding.textView2.text = "New"
+                    }
+                }
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab?) {
