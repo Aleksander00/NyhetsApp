@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="My Account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="225dp"
+        android:layout_marginBottom="600dp"
+        android:textAlignment="center"
+        android:text="Joe"
+        android:textSize="25dp"
+        >
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="600dp"
+        android:textAlignment="center"
+        android:text="Smith"
+        android:textSize="25dp"
+        >
+    </TextView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnAccount_To_Main1"
+        android:textSize="20dp"
+        android:text="Return"
+        android:layout_marginTop="625dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="225dp">
+    </Button>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/AccountFragment_container"
+        android:name="com.example.nyhetsapp.AccountFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
