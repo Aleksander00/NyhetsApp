@@ -58,7 +58,14 @@
         android:id="@+id/accountFragment"
         android:name="com.example.nyhetsapp.AccountFragment"
         android:label="@string/account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/themeFragment"
         android:name="com.example.nyhetsapp.ThemeFragment"

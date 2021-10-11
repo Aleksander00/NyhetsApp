@@ -28,4 +28,7 @@
     <string name="title">Title</string>
     <string name="source">Source</string>
     <string name="thumbnail">Thumbnail</string>
+    <string name="my_account">My Account</string>
+    <string name="back">Back</string>
+    <string name="reset_password">Reset password</string>
 </resources>
