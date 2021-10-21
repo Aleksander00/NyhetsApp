@@ -1,0 +1,36 @@
+<!--English Strings-->
+<resources>
+    <string name="app_name">NyhetsApp</string>
+    <!--Start screen-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="skip">Skip</string>
+    <string name="logo">Logo</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re enter password</string>
+    <string name="username">Username</string>
+    <string name="confirm">Confirm</string>
+    <string name="account">Account</string>
+    <string name="settings">Settings</string>
+    <string name="theme">Theme</string>
+    <string name="logout">Logout</string>
+    <!--Main Fragment-->
+    <string name="search">Search</string>
+    <string name="NRK">NRK</string>
+    <string name="VG">VG</string>
+    <string name="new_">New</string>
+    <string name="saved">Saved</string>
+    <string name="comments">Comments</string>
+    <!--Settings/theme/account-->
+    <string name="darkmode">Darkmode</string>
+    <string name="my_account">My Account</string>
+    <string name="back">Back</string>
+    <string name="reset_password">Reset password</string>
+    <!--List placeholder-->
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="source">Source</string>
+    <string name="thumbnail">Thumbnail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
