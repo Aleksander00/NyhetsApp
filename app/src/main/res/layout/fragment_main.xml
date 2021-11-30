@@ -67,13 +67,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/hello_blank_fragment" />
 
-            <!--<androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/news_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/news_list_item" /> -->
-
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/recycleview_container"
                 android:name="com.example.nyhetsapp.RecycleViewFragment"
